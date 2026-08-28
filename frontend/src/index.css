@@ -1,0 +1,139 @@
+/* ===========================
+   PLACEMENT TRACKER DARK THEME
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+
+    background:#0F172A;
+    color:#F8FAFC;
+    min-height:100vh;
+
+}
+
+#root{
+    min-height:100vh;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#60A5FA;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:10px 18px;
+    cursor:pointer;
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #334155;
+    background:#1E293B;
+    color:white;
+    margin-top:8px;
+    margin-bottom:18px;
+    outline:none;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#3B82F6;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+
+    background:#1E293B;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 0 15px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   TABLES
+=========================== */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#1E293B;
+    padding:14px;
+
+}
+
+td{
+
+    padding:14px;
+    border-bottom:1px solid #334155;
+
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,h2,h3,h4{
+
+    margin-bottom:15px;
+
+}
+
+p{
+
+    color:#CBD5E1;
+
+}
