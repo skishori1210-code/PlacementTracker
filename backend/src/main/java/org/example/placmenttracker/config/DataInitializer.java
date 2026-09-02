@@ -26,28 +26,35 @@ public class DataInitializer implements CommandLineRunner {
     public void run(String... args) {
 
         // =========================
-        // ADMIN
-        // =========================
+// ADMIN
+// =========================
 
         Admin admin = adminRepository
                 .findByEmail("admin@gmail.com")
                 .orElse(null);
 
-        if (admin != null) {
+        if (admin == null) {
 
-            admin.setPassword(
-                    passwordEncoder.encode("Admin@123")
-            );
-
+            admin = new Admin();
+            admin.setName("Administrator");
+            admin.setEmail("admin@gmail.com");
+            admin.setPassword(passwordEncoder.encode("Admin@123"));
             admin.setRole(Role.ADMIN);
 
             adminRepository.save(admin);
 
             System.out.println("--------------------------------");
-            System.out.println("ADMIN LOGIN");
+            System.out.println("DEFAULT ADMIN CREATED");
             System.out.println("Email: admin@gmail.com");
             System.out.println("Password: Admin@123");
             System.out.println("--------------------------------");
+
+        } else {
+
+            admin.setPassword(passwordEncoder.encode("Admin@123"));
+            admin.setRole(Role.ADMIN);
+
+            adminRepository.save(admin);
         }
 
 
