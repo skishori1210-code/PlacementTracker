@@ -28,8 +28,9 @@ public class Student {
 
     private String skills;
 
+    @Lob
+    @Column(columnDefinition = "TEXT")
     private String resumeUrl;
-
     private Boolean approved;
 
     @Enumerated(EnumType.STRING)
