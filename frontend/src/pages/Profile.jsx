@@ -127,7 +127,7 @@ function Profile() {
 
             await axios.put(
 
-                `${API_URL}/students/${student.id}`,
+                `${API_URL}/students/me`,
 
                 formData,
 
